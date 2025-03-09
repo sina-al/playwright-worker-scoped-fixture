@@ -18,7 +18,7 @@ export const test = base.extend<{}, Fixture>({
       const page = await browser.newPage({ storageState: undefined });
 
       await page.goto("https://console-preview.neo4j.io");
-      // await page.waitForURL(/[?&]state=[^&]+/);
+      await page.waitForURL(/[?&]state=[^&]+/);
 
       // do some login here //
 
