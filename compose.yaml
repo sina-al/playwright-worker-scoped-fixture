@@ -1,0 +1,5 @@
+services:
+  playwright:
+    build:
+      context: .
+      dockerfile: Dockerfile
